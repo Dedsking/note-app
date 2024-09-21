@@ -57,7 +57,7 @@ export async function continueConversation(history: Message[]) {
 
     const chatCompletion = await groq.chat.completions.create({
       messages: msgWithSystem,
-      model: "llama3-8b-8192",
+      model: "llama3-70b-8192",
     });
 
     const textSplit = chatCompletion.choices[0].message.content
