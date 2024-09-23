@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <>
       <div className="p-4 shadow">
-        <div className="m-auto flex flex-wrap items-center justify-between gap-3">
+        <div className="m-auto flex w-[400px] flex-wrap items-center justify-between gap-3 md:w-full">
           <Link href={"/notes"} className="flex items-center gap-1">
             <Image src={logo} alt="..." width={40} height={40} />
             <span className="font-bold">Dedsking</span>

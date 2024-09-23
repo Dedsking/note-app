@@ -50,7 +50,8 @@ export async function continueConversation(history: Message[]) {
         "The relevant notes for this query are: \n" +
         relevantNote
           .map((note) => `Title : ${note.title}\n\nContent${note.content}`)
-          .join("\n\n"),
+          .join("\n\n")
+          +"but you have to asnwer to the point.",
     };
 
     const msgWithSystem = [systemMessage, ...history];
